@@ -38,7 +38,7 @@
                 </ol>
                 <li>Now back to your computer.</li>
                 <li>Type "<span id="bold">git remote add <em>origin</em> https://github.com/&lt;your GitHub account name&gt;/&lt;your repository name&gt;</span>" to tell git the repository name 
-                    to update with your files.<br>Note: origin is a variable name that can be anything you like. Just make sure you use it later with "push" or "pull" commands.
+                    to update with your files.<br>Note: origin is a variable name (nickname) that can be anything you like. Just make sure you use it later with "push" or "pull" commands.
                     <br>Substitute your GitHub account name between the slashes after "github.com" and your GitHub repository name after the last slash.<br>
                 <li>Type "<span id="bold">git branch -M main</span>" to tell git to update the main branch.</li>
                 <li>type "<span id="bold">git push -u <em>origin</em> main</span>" to update the GitHub repository with your (committed) files.<br>Be sure to use the same name for "origin" that you 
@@ -51,7 +51,7 @@
             <ul>
                 <li>To test ssh access to GitHub from Git Bash, type "ssh -T git@github.com" - 
                     responds "Hi &lt;your github id&gt"! You've successfully authenticated, but GitHub does not provide shell access."<br>
-                    Then type "git fetch" (no output) or "git push" to confirm that everything is up to date.</li>
+                    Then type "git fetch" (no output) or "git push -u &lt;origin&gt; &lt;branch&gt;" to confirm that everything is up to date.</li>
                 <li>To change the origin repository use this command: "git remote set-url origin &lt;url&gt;" (where origin is customary nickname"). 
                     You can also use a different nickname with the new URL.</li>
         </div>
